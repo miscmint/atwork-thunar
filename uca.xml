@@ -1,0 +1,49 @@
+<?xml encoding="UTF-8" version="1.0"?>
+<actions>
+<action>
+	<icon>utilities-terminal</icon>
+	<name>Terminal hier öffnen</name>
+	<unique-id>1538371598268542-1</unique-id>
+	<command>exo-open --working-directory %f --launch TerminalEmulator</command>
+	<description>Beispiel für eine eigene Aktion</description>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+</action>
+<action>
+	<icon></icon>
+	<name>Ordnergröße</name>
+	<unique-id>1544164077014811-1</unique-id>
+	<command>notify-send $(du -sh %n)</command>
+	<description></description>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>application-zip</icon>
+	<name>Ordner/Datei zippen</name>
+	<unique-id>1544111100215103-10</unique-id>
+	<command>zip -r %n.zip %n</command>
+	<description></description>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>aptdaemon-working</icon>
+	<name>Datei unzippen</name>
+	<unique-id>1544111472324392-14</unique-id>
+	<command>unzip %n</command>
+	<description></description>
+	<patterns>*.zip</patterns>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+</actions>
