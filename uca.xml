@@ -46,4 +46,13 @@
 	<text-files/>
 	<video-files/>
 </action>
+<action>
+	<icon>zoom-in</icon>
+	<name>Dateien im Verzeichnis (rekursiv)</name>
+	<unique-id>1544509457084472-1</unique-id>
+	<command>notify-send $(find %n -type f | wc -l)</command>
+	<description></description>
+	<patterns>*</patterns>
+	<directories/>
+</action>
 </actions>
